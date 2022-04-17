@@ -10,8 +10,9 @@
  * to start your application from cjs code that uses dynamic import 
  *
  * for module authoring you can depend on the static import '' syntax to combine modules before you deploy them or to static link them
- * on runtime. while loading will always happen via dynamic import on runtime even if you use a script type module tag to load that
- * the result is always the same as with import()
+ * on runtime. while loading and init of the imported entrypoint will always happen via dynamic import on runtime even if you use a script type module tag to load that
+ * the result is always the same as with import() when you start your application in NodeJS from a .mjs file or .js file with package.json type module it behaves as
+ * it would start via .cjs using import() without module exports 
  *
  * so There are 2 worlds which are existing both in co existence CommonJS and ESModules while both are relativ interchange able for static linking
  * via transpilers. In general you only need CJS Code when you use it to bootstrap a Environment that depends on sync sideEffects of nativ code on load.
