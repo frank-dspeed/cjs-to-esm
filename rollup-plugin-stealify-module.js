@@ -22,3 +22,7 @@
  * Android, Ios is the same Concept it depends on native code sideEffects so none JS Code that throws signals and events into the JS Environment.
  * so you loose events when you start async that can be ok for your application or not it depends on your needs... 
  */
+
+/**
+ * Update base on the https://github.com/stealify/ecmascript-loader
+ */ 
